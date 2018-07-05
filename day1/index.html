@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="swiper-container banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="top">
+                <p>=</p>
+                <label>
+                    <input type="text" placeholder="钓鱼竿">
+                </label>
+            </div>
+        </header>
+        <section>
+            <div class="list">
+                <dl>
+                    <dt><img src="img/images/1.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/2.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/3.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/4.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/5.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+            </div>
+            <div class="list lists">
+                <dl>
+                    <dt><img src="img/images/6.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/7.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/8.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/9.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/images/10.jpg" alt=""></dt>
+                    <dd>领优惠劵</dd>
+                </dl>
+            </div>
+            <div class="img">
+              <img src="img/images/bg.jpg" alt="">
+            </div>
+            <div class="but">
+                <div class="left">
+                    <h2>我的</h2>
+                    <h6>购物头条</h6>
+                    <p>>></p>
+                </div>
+                <div class="middle">
+                    <p><em>京东</em> <span>京东天气管家</span></p>
+                    <p>你所在的城市太干燥啦。风尚保湿太福利！看这里></p>
+                </div>
+                <div class="right">
+                    <img src="img/images/bg1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <footer>
+            <dl class="active">
+                <dt><img src="img/images/bg2.jpg" alt=""></dt>
+                <dd>首页</dd>
+            </dl>
+             <dl>
+                <dt><img src="img/images/bg3.jpg" alt=""></dt>
+                <dd>首页</dd>
+            </dl>
+             <dl>
+                <dt><img src="img/images/bg4.jpg" alt=""></dt>
+                <dd>首页</dd>
+            </dl>
+             <dl>
+                <dt><img src="img/images/bg5.jpg" alt=""></dt>
+                <dd>首页</dd>
+            </dl>
+             <dl>
+                <dt><img src="img/images/bg6.jpg" alt=""></dt>
+                <dd>首页</dd>
+            </dl>
+        </footer>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+        new Swiper(".banner",{
+            autoplay:true
+        });
+        $('footer dl').on('click',function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</body>
+
+</html>
